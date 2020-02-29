@@ -1,0 +1,5 @@
+C:\Users\kuma\source\repos\musicDriverInterface\musicDriverInterface\bin\Debug\musicDriverInterface.dll
+C:\Users\kuma\source\repos\musicDriverInterface\musicDriverInterface\bin\Debug\musicDriverInterface.pdb
+C:\Users\kuma\source\repos\musicDriverInterface\musicDriverInterface\obj\Debug\musicDriverInterface.csprojAssemblyReference.cache
+C:\Users\kuma\source\repos\musicDriverInterface\musicDriverInterface\obj\Debug\musicDriverInterface.dll
+C:\Users\kuma\source\repos\musicDriverInterface\musicDriverInterface\obj\Debug\musicDriverInterface.pdb
