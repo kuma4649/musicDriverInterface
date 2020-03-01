@@ -56,5 +56,7 @@ namespace musicDriverInterface
         void ShotEffect();
 
         int GetStatus();
+
+        int SetLoopCount(int loopCounter);
     }
 }
