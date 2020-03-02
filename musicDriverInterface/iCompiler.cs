@@ -13,7 +13,7 @@ namespace musicDriverInterface
         void Init();
 
         MmlDatum[] StartToMmlData(
-            string srcText
+            string srcPath
             , string wrkPath
             , Action<string> dispMessage
             );
