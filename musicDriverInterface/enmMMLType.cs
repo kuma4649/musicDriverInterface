@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace musicDriverInterface
+﻿namespace musicDriverInterface
 {
     public enum enmMMLType
     {
@@ -59,6 +53,7 @@ namespace musicDriverInterface
         JumpPoint,      // J
         Velocity,       // U
         SkipPlay,       // caret位置からの演奏のための特殊コマンド
-        DCSGCh3Freq     // wf
+        DCSGCh3Freq,    // wf
+        TraceLocate,    // トレース機能向けロケータ
     }
 }

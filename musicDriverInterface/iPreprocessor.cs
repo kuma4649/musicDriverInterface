@@ -3,17 +3,15 @@ using System.IO;
 
 namespace musicDriverInterface
 {
-    public interface iCompiler
+    public interface iPreprocessor
     {
-        MmlDatum[] Compile(
+        Stream Preprocess(
             Stream sourceMML
             , Func<string, Stream> appendFileReaderCallback
             );
 
         void Init();
 
-        CompilerInfo GetCompilerInfo();
-
-
+        PreprocessorInfo GetPreprocessorInfo();
     }
 }

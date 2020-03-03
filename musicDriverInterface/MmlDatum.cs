@@ -30,16 +30,5 @@ namespace musicDriverInterface
             this.dat = dat;
         }
 
-        public MmlDatum Copy()
-        {
-            MmlDatum ret = new MmlDatum();
-            ret.type = this.type;
-            ret.type = this.type;
-            ret.args = this.args;
-            ret.linePos = this.linePos;
-            ret.dat = this.dat;
-
-            return ret;
-        }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace musicDriverInterface
+﻿namespace musicDriverInterface
 {
     public class ChipDatum
     {
@@ -22,5 +16,6 @@ namespace musicDriverInterface
             this.time = time;
             this.addtionalData = addtionalData;
         }
+
     }
 }
