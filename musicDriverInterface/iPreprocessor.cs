@@ -5,8 +5,9 @@ namespace musicDriverInterface
 {
     public interface iPreprocessor
     {
-        Stream Preprocess(
+        void Preprocess(
             Stream sourceMML
+            , Stream destMML
             , Func<string, Stream> appendFileReaderCallback
             );
 
