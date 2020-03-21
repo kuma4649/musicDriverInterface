@@ -5,3 +5,4 @@ D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface\obj\Release\n
 D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface\obj\Release\netstandard2.0\musicDriverInterface.AssemblyInfo.cs
 D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface\obj\Release\netstandard2.0\musicDriverInterface.dll
 D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface\obj\Release\netstandard2.0\musicDriverInterface.pdb
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface\obj\Release\netstandard2.0\musicDriverInterface.csproj.CoreCompileInputs.cache
