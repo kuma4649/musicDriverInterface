@@ -14,6 +14,6 @@ namespace musicDriverInterface
 
         CompilerInfo GetCompilerInfo();
 
-
+        void SetCompileSwitch(params object[] param);
     }
 }

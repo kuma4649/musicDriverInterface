@@ -55,5 +55,6 @@
         SkipPlay,       // caret位置からの演奏のための特殊コマンド
         DCSGCh3Freq,    // wf
         TraceLocate,    // トレース機能向けロケータ
+        ClockCounter,   // C
     }
 }

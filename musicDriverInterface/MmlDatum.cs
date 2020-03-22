@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace musicDriverInterface
 {
+    [Serializable]
     public class MmlDatum
     {
         public enmMMLType type = enmMMLType.unknown;

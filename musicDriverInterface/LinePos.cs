@@ -1,5 +1,9 @@
-﻿namespace musicDriverInterface
+﻿
+using System;
+
+namespace musicDriverInterface
 {
+    [Serializable]
     public class LinePos
     {
         public string srcMMLID = "";
@@ -11,6 +15,19 @@
         public int chipIndex = 0;
         public int chipNumber = 0;
         public int ch = -1;
+
+        public LinePos()
+        {
+            this.srcMMLID = "";
+            this.row = -1;
+            this.col = -1;
+            this.length = 1;
+            this.part = "";
+            this.chip = "";
+            this.chipIndex = 0;
+            this.chipNumber = 0;
+            this.ch = -1;
+        }
 
         public LinePos(string srcMMLID, int row = -1, int col = -1, int length = -1, string part = "", string chip = "", int chipIndex = 0, int chipNumber = 0, int ch = -1)
         {
