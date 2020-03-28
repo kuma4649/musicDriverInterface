@@ -7,7 +7,8 @@ namespace musicDriverInterface
         public List<int> totalCount;
         public List<int> loopCount;
         public List<int> bufferCount;
-        public int jumpClock;
+        public int jumpClock;//ジャンプポイントまでのクロック数
+        public List<int> jumpChannel;//ジャンプしたチャンネル
         public object addtionalInfo;
 
     }
