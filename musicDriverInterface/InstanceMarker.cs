@@ -5,25 +5,44 @@ namespace musicDriverInterface
 {
     public class InstanceMarker
     {
-        public iCompiler GetCompiler(string compilerDllFullPath, string compilerFullNameSpace)
+        private Assembly asmCompiler = null;
+        private Assembly asmDriver = null;
+        private Assembly asmPreprocessor = null;
+
+        public void LoadCompilerDll(string compilerDllFullPath)
         {
-            Assembly asm = Assembly.LoadFrom(compilerDllFullPath);
-            var info = asm.GetType(compilerFullNameSpace);
-            return Activator.CreateInstance(info, new object[] { null }) as iCompiler;
+            asmCompiler = Assembly.LoadFrom(compilerDllFullPath);
         }
 
-        public iDriver GetDriver(string driverDllFullPath, string driverFullNameSpace)
+        public iCompiler GetCompiler(string compilerFullNameSpaceInstance, params object[] args)
         {
-            Assembly asm = Assembly.LoadFrom(driverDllFullPath);
-            var info = asm.GetType(driverFullNameSpace);
-            return Activator.CreateInstance(info, new object[] { null }) as iDriver;
+            if (asmCompiler == null) return null;
+            var info = asmCompiler.GetType(compilerFullNameSpaceInstance);
+            return Activator.CreateInstance(info, args) as iCompiler;
         }
 
-        public iPreprocessor GetPreprocessor(string preprocessorDllFullPath, string preprocessorFullNameSpace)
+        public void LoadDriverDll(string driverDllFullPath)
         {
-            Assembly asm = Assembly.LoadFrom(preprocessorDllFullPath);
-            var info = asm.GetType(preprocessorFullNameSpace);
-            return Activator.CreateInstance(info, new object[] { null }) as iPreprocessor;
+            asmDriver = Assembly.LoadFrom(driverDllFullPath);
+        }
+
+        public iDriver GetDriver(string driverFullNameSpaceInstance, params object[] args)
+        {
+            if (asmDriver == null) return null;
+            var info = asmDriver.GetType(driverFullNameSpaceInstance);
+            return Activator.CreateInstance(info, args) as iDriver;
+        }
+
+        public void LoadPreprocessorDll(string preprocessorDllFullPath)
+        {
+            asmPreprocessor = Assembly.LoadFrom(preprocessorDllFullPath);
+        }
+
+        public iPreprocessor GetPreprocessor(string preprocessorFullNameSpaceInstance, params object[] args)
+        {
+            if (asmPreprocessor == null) return null;
+            var info = asmPreprocessor.GetType(preprocessorFullNameSpaceInstance);
+            return Activator.CreateInstance(info, args) as iPreprocessor;
         }
 
     }
