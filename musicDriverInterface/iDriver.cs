@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace musicDriverInterface
 {
-    public interface iDriver
+    public interface iDriver :iInterface
     {
         void Init(string fileName
             , Action<ChipDatum> chipWriteRegister
@@ -20,8 +20,6 @@ namespace musicDriverInterface
         //-------
 
         MmlDatum[] GetDATA();
-
-        List<Tuple<string, string>> GetTags();
 
         byte[] GetPCMFromSrcBuf();
 

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace musicDriverInterface
 {
-    public interface iPreprocessor
+    public interface iPreprocessor :iInterface
     {
         void Preprocess(
             Stream sourceMML

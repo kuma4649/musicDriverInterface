@@ -3,17 +3,18 @@ using System.IO;
 
 namespace musicDriverInterface
 {
-    public interface iCompiler
+    public interface iCompiler : iInterface
     {
+        void Init();
+
         MmlDatum[] Compile(
             Stream sourceMML
             , Func<string, Stream> appendFileReaderCallback
             );
 
-        void Init();
-
         CompilerInfo GetCompilerInfo();
 
         void SetCompileSwitch(params object[] param);
+
     }
 }
