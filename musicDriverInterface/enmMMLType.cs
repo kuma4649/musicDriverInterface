@@ -56,5 +56,7 @@
         DCSGCh3Freq,    // wf
         TraceLocate,    // トレース機能向けロケータ
         ClockCounter,   // C
+        RelativeVolumeSetting, //@v
+        Effect,         // X
     }
 }
