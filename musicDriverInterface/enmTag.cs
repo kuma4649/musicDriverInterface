@@ -1,6 +1,6 @@
 ﻿namespace musicDriverInterface
 {
-    public enum enmGD3
+    public enum enmTag
     {
         NumberOfSongs,
 
