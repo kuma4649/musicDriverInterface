@@ -56,5 +56,7 @@ namespace musicDriverInterface
         int GetStatus();
 
         int SetLoopCount(int loopCounter);
+
+        int GetNowLoopCounter();
     }
 }

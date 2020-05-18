@@ -2,7 +2,7 @@
 {
     public interface iInterface
     {
-        Tag GetGD3TagInfo();
+        GD3Tag GetGD3TagInfo(byte[] srcBuf);
 
     }
 }

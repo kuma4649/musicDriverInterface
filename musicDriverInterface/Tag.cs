@@ -2,7 +2,7 @@
 
 namespace musicDriverInterface
 {
-    public class Tag
+    public class GD3Tag
     {
         public Dictionary<enmTag, string[]> dicItem=new Dictionary<enmTag, string[]>();
     }
