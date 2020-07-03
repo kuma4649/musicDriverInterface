@@ -58,5 +58,6 @@
         ClockCounter,   // C
         RelativeVolumeSetting, //@v
         Effect,         // X
+        Synchronous,    // *
     }
 }
