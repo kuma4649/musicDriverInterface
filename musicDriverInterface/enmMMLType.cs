@@ -59,5 +59,6 @@
         RelativeVolumeSetting, //@v
         Effect,         // X
         Synchronous,    // *
+        Arpeggio,       // APON APOF AP
     }
 }
