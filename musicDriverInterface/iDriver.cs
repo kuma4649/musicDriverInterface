@@ -107,5 +107,8 @@ namespace musicDriverInterface
         /// </summary>
         /// <returns>回数</returns>
         int GetNowLoopCounter();
+
+        void SetDriverSwitch(params object[] param);
+
     }
 }

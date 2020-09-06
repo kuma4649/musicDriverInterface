@@ -31,5 +31,13 @@ namespace musicDriverInterface
             this.dat = dat;
         }
 
+        public MmlDatum(int dat,enmMMLType type, LinePos linePos, params object[] args)
+        {
+            this.type = type;
+            this.args = args != null ? args.ToList() : null;
+            this.linePos = linePos;
+            this.dat = dat;
+        }
+
     }
 }

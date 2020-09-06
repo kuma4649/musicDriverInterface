@@ -13,7 +13,7 @@ namespace musicDriverInterface
 
         public static void WriteLine(LogLevel level, string msg)
         {
-            if ((off & (int)level) != 0) return;
+            //if ((off & (int)level) != 0) return;
 
             if (level <= Log.level)
             {
