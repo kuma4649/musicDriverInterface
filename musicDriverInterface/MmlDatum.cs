@@ -39,5 +39,16 @@ namespace musicDriverInterface
             this.dat = dat;
         }
 
+
+        public override string ToString()
+        {
+            return string.Format(
+                "type:{0} args:{1} linePos:[ {2} ]"
+                ,type
+                ,args
+                ,linePos
+                );
+        }
+
     }
 }
