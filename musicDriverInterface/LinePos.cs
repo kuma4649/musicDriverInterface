@@ -8,6 +8,7 @@ namespace musicDriverInterface
     [Serializable]
     public class LinePos
     {
+        public object document = null;
         public string srcMMLID = "";
         public int row = -1;
         public int col = -1;
@@ -24,6 +25,7 @@ namespace musicDriverInterface
 
         public LinePos()
         {
+            this.document = null;
             this.srcMMLID = "";
             this.row = -1;
             this.col = -1;
@@ -39,8 +41,9 @@ namespace musicDriverInterface
             this.aliesDepth = 0;
         }
 
-        public LinePos(string srcMMLID, int row = -1, int col = -1, int length = -1, string part = "", string chip = "", int chipIndex = 0, int chipNumber = 0, int ch = -1, string aliesName = "", string aliesNextName = "", int aliesDepth = 0)
+        public LinePos(object document, string srcMMLID, int row = -1, int col = -1, int length = -1, string part = "", string chip = "", int chipIndex = 0, int chipNumber = 0, int ch = -1, string aliesName = "", string aliesNextName = "", int aliesDepth = 0)
         {
+            this.document = document;
             this.srcMMLID = srcMMLID;
             this.row = row;
             this.col = col;
@@ -60,6 +63,7 @@ namespace musicDriverInterface
         {
             if (src == null) return;
 
+            src.document = null;
             src.srcMMLID = "";
             src.row = -1;
             src.col = -1;
@@ -79,6 +83,7 @@ namespace musicDriverInterface
         {
             if (src == null || des == null) return;
 
+            des.document = src.document;
             des.srcMMLID = src.srcMMLID;
             des.row = src.row;
             des.col = src.col;
@@ -100,6 +105,7 @@ namespace musicDriverInterface
             if (src == null) return null;
 
             LinePos ret = new LinePos(
+                src.document,
                 src.srcMMLID,
                 src.row,
                 src.col,
@@ -121,6 +127,7 @@ namespace musicDriverInterface
         public override bool Equals(object obj)
         {
             return obj is LinePos pos &&
+                   document == pos.document &&
                    srcMMLID == pos.srcMMLID &&
                    row == pos.row &&
                    col == pos.col &&
@@ -139,6 +146,7 @@ namespace musicDriverInterface
         public override int GetHashCode()
         {
             int hashCode = -113896206;
+            hashCode = hashCode * -1521134295 + (document != null ? document.GetHashCode() : 0);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(srcMMLID);
             hashCode = hashCode * -1521134295 + row.GetHashCode();
             hashCode = hashCode * -1521134295 + col.GetHashCode();
@@ -158,7 +166,8 @@ namespace musicDriverInterface
         public override string ToString()
         {
             return string.Format(
-                "srcMMLID:{0} row:{1} col:{2} length:{3} part:{4} chip:{5} chipIndex:{6} chipNumber:{7} ch:{8} aliesName:{9} aliesNextName:{10} aliesDepth:{11}"
+                "document:{0} srcMMLID:{1} row:{2} col:{3} length:{4} part:{5} chip:{6} chipIndex:{7} chipNumber:{8} ch:{9} aliesName:{10} aliesNextName:{11} aliesDepth:{12}"
+                , document
                 , srcMMLID
                 , row
                 , col

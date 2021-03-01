@@ -65,5 +65,6 @@
         TraceUpdateStack, // トレース機能向け 情報スタック更新
         //TracePop,       // トレース機能向け 情報スタックへpop
         IDE,            // IDE 独自機能 識別のためのコマンド
+        PageDirectSend, // PDON PDOF
     }
 }
