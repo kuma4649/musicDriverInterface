@@ -13,6 +13,7 @@ namespace musicDriverInterface
         public int jumpClock;//ジャンプポイントまでのクロック数
         public List<int> jumpChannel;//ジャンプしたチャンネル
         public object addtionalInfo;
+        public string formatType;//出力データのフォーマット形式(複数のフォーマットを出力できるコンパイラ向けの識別情報となります)
 
     }
 }
