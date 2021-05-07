@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,10 +9,10 @@ namespace musicDriverInterface
 {
     public interface iDriver :iInterface
     {
-        void Init(string fileName
-            , Action<ChipDatum> chipWriteRegister
-            , Action<long, int> chipWaitSend
+        void Init(
+            List<ChipAction> chipsAction
             , MmlDatum[] srcBuf
+            , Func<string, Stream> appendFileReaderCallback
             , object addtionalOption
             );
 
