@@ -68,5 +68,7 @@
         PageDirectSend,   // PDON PDOF
         KeyOnDelay,       // KD キーオンディレイ
         HardEnvelopeSync, // HS.. Hardware envelope Sync
+        ReversePhase,     // PRV 逆位相
+        Modulation,       // モジュレーション
     }
 }
