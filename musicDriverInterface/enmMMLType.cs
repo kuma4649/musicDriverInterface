@@ -70,5 +70,6 @@
         HardEnvelopeSync, // HS.. Hardware envelope Sync
         ReversePhase,     // PRV 逆位相
         Modulation,       // モジュレーション
+        PartColor,        // パートの色
     }
 }
