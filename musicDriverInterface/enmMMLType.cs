@@ -71,5 +71,6 @@
         ReversePhase,     // PRV 逆位相
         Modulation,       // モジュレーション
         PartColor,        // パートの色
+        Portament,        // ポルタメント
     }
 }
