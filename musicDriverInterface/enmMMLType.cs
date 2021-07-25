@@ -72,5 +72,8 @@
         Modulation,       // モジュレーション
         PartColor,        // パートの色
         Portament,        // ポルタメント
+        ReplaceByParts_Start,// パート別リプレースコマンド開始
+        ReplaceByParts,      // パート別リプレースコマンド
+        ReplaceByParts_End,  // パート別リプレースコマンド終了
     }
 }
