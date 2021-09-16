@@ -75,5 +75,8 @@
         ReplaceByParts_Start,// パート別リプレースコマンド開始
         ReplaceByParts,      // パート別リプレースコマンド
         ReplaceByParts_End,  // パート別リプレースコマンド終了
+        PartArpeggio_Start,  //パートアルペジオ開始
+        PartArpeggio_End, //パートアルペジオ終了
+        ResetPlaySync,    // 演奏中の同期パラメータリセット信号
     }
 }
