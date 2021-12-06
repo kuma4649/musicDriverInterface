@@ -78,5 +78,6 @@
         PartArpeggio_Start,  //パートアルペジオ開始
         PartArpeggio_End, //パートアルペジオ終了
         ResetPlaySync,    // 演奏中の同期パラメータリセット信号
+        RR15,             // TTON,TTOF
     }
 }
