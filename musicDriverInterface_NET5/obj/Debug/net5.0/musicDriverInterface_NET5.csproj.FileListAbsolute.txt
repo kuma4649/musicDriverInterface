@@ -1,0 +1,10 @@
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\bin\Debug\net5.0\musicDriverInterface.deps.json
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\bin\Debug\net5.0\musicDriverInterface.dll
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\bin\Debug\net5.0\musicDriverInterface.pdb
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface_NET5.csproj.AssemblyReference.cache
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface_NET5.GeneratedMSBuildEditorConfig.editorconfig
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface_NET5.AssemblyInfoInputs.cache
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface_NET5.AssemblyInfo.cs
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface_NET5.csproj.CoreCompileInputs.cache
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface.dll
+D:\bootcamp\Source\Repos\musicDriverInterface\musicDriverInterface_NET5\obj\Debug\net5.0\musicDriverInterface.pdb

@@ -80,5 +80,7 @@
 
         SongSrcVersion,
         SongObjVersion,
+        //埋め込み系
+        Artwork,
     }
 }

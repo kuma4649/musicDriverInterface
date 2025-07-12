@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright ©  2020")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0548a02075b256e8d29ad147bf9f6c5b55041d04")]
 [assembly: System.Reflection.AssemblyProductAttribute("musicDriverInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("musicDriverInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
