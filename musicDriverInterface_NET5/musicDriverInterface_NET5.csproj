@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>musicDriverInterface</AssemblyName>
+    <RootNamespace>musicDriverInterface</RootNamespace>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\musicDriverInterface\ChipAction.cs" Link="ChipAction.cs" />
+    <Compile Include="..\musicDriverInterface\ChipDatum.cs" Link="ChipDatum.cs" />
+    <Compile Include="..\musicDriverInterface\CompilerInfo.cs" Link="CompilerInfo.cs" />
+    <Compile Include="..\musicDriverInterface\enmMMLType.cs" Link="enmMMLType.cs" />
+    <Compile Include="..\musicDriverInterface\enmTag.cs" Link="enmTag.cs" />
+    <Compile Include="..\musicDriverInterface\iCompiler.cs" Link="iCompiler.cs" />
+    <Compile Include="..\musicDriverInterface\iDriver.cs" Link="iDriver.cs" />
+    <Compile Include="..\musicDriverInterface\iInterface.cs" Link="iInterface.cs" />
+    <Compile Include="..\musicDriverInterface\Information.cs" Link="Information.cs" />
+    <Compile Include="..\musicDriverInterface\InstanceMarker.cs" Link="InstanceMarker.cs" />
+    <Compile Include="..\musicDriverInterface\iPreprocessor.cs" Link="iPreprocessor.cs" />
+    <Compile Include="..\musicDriverInterface\LinePos.cs" Link="LinePos.cs" />
+    <Compile Include="..\musicDriverInterface\Log.cs" Link="Log.cs" />
+    <Compile Include="..\musicDriverInterface\LogLevel.cs" Link="LogLevel.cs" />
+    <Compile Include="..\musicDriverInterface\MmlDatum.cs" Link="MmlDatum.cs" />
+    <Compile Include="..\musicDriverInterface\PreprocessorInfo.cs" Link="PreprocessorInfo.cs" />
+    <Compile Include="..\musicDriverInterface\Tag.cs" Link="Tag.cs" />
+  </ItemGroup>
+
+</Project>
