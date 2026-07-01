@@ -1,3 +1,5 @@
 .vs/
 musicDriverInterface/bin/
 musicDriverInterface/obj/
+musicDriverInterface_NET5/bin/
+musicDriverInterface_NET5/obj/
