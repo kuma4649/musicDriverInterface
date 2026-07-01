@@ -9,6 +9,11 @@ namespace musicDriverInterface
 {
     public interface iDriver :iInterface
     {
+        public delegate void dlgEMS_Map(byte handle, ref byte pageMap, ushort srcPageNo, ushort len);
+        public delegate void dlgEMS_GetHandleName(ref byte ah, ushort dx, ref string sbuf);
+        public delegate void dlgEMS_SetHandleName(ref byte ah, ushort dx, string emsname2);
+        public delegate void dlgEMS_AllocMemory(ref byte ah, ref ushort dx, ushort bx);
+
         void Init(
             List<ChipAction> chipsAction
             , MmlDatum[] srcBuf

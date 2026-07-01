@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ImMdLwaliQ4=",
+  "dgSpecHash": "7Fs8cGSTQpg=",
   "success": true,
   "projectFilePath": "D:\\bootcamp\\Source\\Repos\\musicDriverInterface\\musicDriverInterface\\musicDriverInterface.csproj",
-  "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
